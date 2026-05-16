@@ -37,6 +37,10 @@
       link.href = origin.link || "#";
       link.textContent = origin.name || "";
 
+      if (!origin.link || !origin.link.startsWith("https://lyrics.imicomweb.com/songs/")) {
+        link.classList.add("origin-link-muted");
+      }
+
       if (origin.link) {
         link.target = "_blank";
         link.rel = "noopener noreferrer";

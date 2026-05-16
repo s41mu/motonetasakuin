@@ -272,6 +272,10 @@ h3 {
   background: #777;
 }
 
+.origin-link-muted {
+  color: #aaa;
+}
+
 .empty {
   border: 1px solid var(--line);
   background: var(--panel);
