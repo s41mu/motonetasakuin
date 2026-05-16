@@ -35,7 +35,7 @@
       const link = document.createElement("a");
       link.className = "origin-link";
       link.href = origin.link || "#";
-      link.textContent = origin.name || "無題";
+      link.textContent = origin.name || "";
 
       if (origin.link) {
         link.target = "_blank";
@@ -113,14 +113,44 @@
       const article = document.createElement("article");
       article.className = "feed";
 
+      if (feed.image) {
+        const imageLink = document.createElement("a");
+        imageLink.className = "feed-image-link";
+        imageLink.href = feed.link || "#";
+
+        if (feed.link) {
+          imageLink.target = "_blank";
+          imageLink.rel = "noopener noreferrer";
+        }
+
+        const image = document.createElement("img");
+        image.className = "feed-image";
+        image.src = feed.image;
+        image.alt = feed.title || "フィード画像";
+        image.loading = "lazy";
+        imageLink.append(image);
+        article.append(imageLink);
+      }
+
+      const content = document.createElement("div");
+      content.className = "feed-content";
+
       if (feed.title) {
         const title = document.createElement("h3");
         title.className = "feed-title";
         title.textContent = feed.title;
-        article.append(title);
+        content.append(title);
       }
 
-      article.append(createTextBlock("feed-body", feed.body || ""));
+      const body = createTextBlock("feed-body", feed.body || "");
+      body.classList.add(feed.font === "Imitate" ? "font-imitate" : "font-default");
+      content.append(body);
+
+      if (feed.origin && feed.origin.length) {
+        content.append(createOriginBlock(feed.origin));
+      }
+
+      article.append(content);
       feedList.append(article);
     });
   }
