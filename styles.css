@@ -1,0 +1,292 @@
+@font-face {
+    font-family: "Imitate";
+    src: url("GenZenGothicKaiC.woff2") format("woff2");
+    font-display: swap;
+}
+
+:root {
+  --background: #111;
+  --text: #fff;
+  --muted: #777;
+  --line: #fff;
+  --soft-line: #888;
+  --link: #1f4f8f;
+  --panel: #fafafa;
+  --font-default: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif, Meiryo;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color: var(--text);
+  background: var(--background);
+  font-family: 'Imitate', var(--font-default);
+  font-size: 22px;
+  line-height: 1.4;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  color: var(--link);
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  border-bottom: 4px solid var(--line);
+  padding: 10px 16px;
+}
+
+.site-title {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: var(--text);
+  font-size: 32px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.site-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 0.92rem;
+}
+
+.page {
+  width: min(960px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 24px 0 40px;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  margin-bottom: 8px;
+  font-size: 1.55rem;
+  line-height: 1.45;
+}
+
+h2 {
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 14px;
+  padding-bottom: 6px;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+.tabs {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin: 0 12px 12px;
+}
+
+.tab-button {
+  width: 100%;
+  min-width: 0;
+  border: 2px solid var(--line);
+  border-radius: 15px 15px 0 0;
+  background: var(--background);
+  color: var(--text);
+  cursor: pointer;
+  font: inherit;
+  padding: 5px 14px;
+  text-align: center;
+  transition: background-color 120ms ease, color 120ms ease;
+}
+
+.tab-button:hover,
+.tab-button:focus-visible {
+  background: #333;
+}
+
+.tab-button[aria-selected="true"] {
+  background: #fff;
+  color: #000;
+  font-weight: 700;
+}
+
+.panel {
+  margin-bottom: 28px;
+}
+
+.world-list,
+.feed-list {
+  display: grid;
+  gap: 12px;
+}
+
+.world {
+  border: 2px solid var(--line);
+  border-radius: 10px;
+  background: var(--background);
+}
+
+.world summary {
+  cursor: pointer;
+  font-weight: 700;
+  list-style: none;
+  padding: 9px 12px;
+}
+
+.world summary::-webkit-details-marker {
+  display: none;
+}
+
+.world summary::before {
+  content: "+";
+  display: inline-block;
+  width: 1.2em;
+  color: var(--muted);
+}
+
+.world[open] summary::before {
+  content: "-";
+}
+
+.poem-list {
+  display: grid;
+  gap: 12px;
+  padding: 12px;
+}
+
+.poem,
+.feed {
+  padding: 5px 10px 5px;
+}
+
+.poem-separator {
+  width: 100%;
+  border: 0;
+  border-top: 2px solid var(--soft-line);
+  margin: 4px 0;
+}
+
+.poem-title,
+.feed-title {
+  margin-bottom: 8px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.poem-body,
+.feed-body {
+  margin: 0;
+  white-space: pre-wrap;
+  text-align: center;
+}
+
+.font-imitate {
+  font-family: 'Imitate', var(--font-default);
+}
+
+.font-default {
+  font-family: var(--font-default);
+}
+
+.origin-block {
+  margin-top: 22px;
+  border-radius: 10px;
+  background: #333;
+  padding: 6px;
+}
+
+.origin-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.origin-link {
+  display: inline-block;
+  margin: 5px;
+  border-radius: 5px;
+  background: #555;
+  color: var(--text);
+  padding: 5px;
+  font-family: var(--font-default);
+  font-weight: 1000;
+  text-decoration: underline;
+  text-underline-offset: 0.3ex;
+  transition: background-color 120ms ease;
+}
+
+.origin-link:hover,
+.origin-link:focus-visible {
+  background: #777;
+}
+
+.empty {
+  border: 1px solid var(--line);
+  background: var(--panel);
+  color: var(--muted);
+  margin: 0;
+  padding: 14px;
+}
+
+.site-footer {
+  color: var(--muted);
+  font-size: 14px;
+  padding: 12px 16px;
+  text-align: center;
+}
+
+@media (max-width: 560px) {
+  .site-header {
+    align-items: center;
+  }
+
+  .site-title {
+    font-size: 28px;
+  }
+
+  .site-icon {
+    width: 42px;
+    height: 42px;
+  }
+
+  .page {
+    width: min(100% - 20px, 960px);
+    padding-top: 18px;
+  }
+
+  .tabs {
+    gap: 8px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .tab-button {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
