@@ -135,8 +135,8 @@ window.siteData = {
               "link": "https://lyrics.imicomweb.com/songs/710/"
             },
             {
-              "name": "。。",
-              "link": "https://lyrics.imicomweb.com/songs/61/"
+              "name": "。。[2026]",
+              "link": "https://vimesis.com/watch?v=JRVTtAlNKcAa"
             },
             {
               "name": "▼▼",
