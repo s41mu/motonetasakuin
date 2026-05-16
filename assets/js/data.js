@@ -205,6 +205,10 @@ window.siteData = {
           link: "https://www.aozora.gr.jp/cards/000196/files/975_15935.html"
         },
         {
+          name: "エヌ",
+          link: "https://lyrics.imicomweb.com/songs/16/"
+        },
+        {
           name: "教育",
           link: "https://lyrics.imicomweb.com/songs/7/"
         }
