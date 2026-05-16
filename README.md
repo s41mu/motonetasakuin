@@ -1,39 +1,11 @@
 # ワールドとフィードの文章
 
-GitHub Pages 用の1ページ静的サイトです。
+私のワールドやフィードの文章の元ネタについて記載する情報サイト。  
 
-## 更新方法
+https://s41mu.github.io/motonetasakuin/
 
-本文は `assets/js/data.js` を編集します。
+## 更新方法覚書
 
-- `worlds`: ワールドごとの詩を入れます。
-- `feeds`: フィードの文章を入れます。
-- 元ネタや出典欄は表示していません。
-- `Discord | #雑談` はデータに入れない運用にしてください。
+[`assets/js/data.js`](assets/js/data.js) を編集して `main` ブランチにプッシュするだけ。
 
-```js
-window.siteData = {
-  worlds: [
-    {
-      name: "ワールド名",
-      poems: [
-        {
-          title: "詩のタイトル",
-          body: `本文をここに書きます。
-改行もそのまま表示されます。`
-        }
-      ]
-    }
-  ],
-  feeds: [
-    {
-      title: "フィード名",
-      body: `本文をここに書きます。`
-    }
-  ]
-};
-```
-
-## ローカル確認
-
-`index.html` をブラウザで開くか、任意の静的サーバーで確認できます。
+後は GitHub Pages の Actions が走って、完了すると反映される。
