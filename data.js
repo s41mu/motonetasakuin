@@ -193,6 +193,14 @@ window.siteData = {
         {
           name: "鵺",
           link: "https://lyrics.imicomweb.com/songs/87/"
+        },
+        {
+          name: "方丈記",
+          link: "https://www.aozora.gr.jp/cards/000196/files/975_15935.html"
+        },
+        {
+          name: "教育",
+          link: "https://lyrics.imicomweb.com/songs/7/"
         }
       ]
     },
@@ -342,6 +350,10 @@ window.siteData = {
         {
           name: "",
           link: "https://lyrics.imicomweb.com/songs/2815/"
+        },
+        {
+          name: "羅生門",
+          link: "https://www.aozora.gr.jp/cards/000879/files/127_15260.html"
         },
         {
           name: "草葉の陰",
