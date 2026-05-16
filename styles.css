@@ -238,6 +238,7 @@ h3 {
 
 .font-default {
   font-family: var(--font-default);
+  font-size: 0.9rem;
 }
 
 .origin-block {
