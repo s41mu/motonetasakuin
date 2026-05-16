@@ -178,6 +178,22 @@ h3 {
   padding: 12px;
 }
 
+.world-image-link {
+  display: block;
+  width: min(100%, 360px);
+  justify-self: center;
+  overflow: hidden;
+  background: #333;
+  line-height: 0;
+}
+
+.world-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
 .poem {
   padding: 5px 10px 5px;
 }

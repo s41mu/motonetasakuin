@@ -70,6 +70,25 @@
       const poemList = document.createElement("div");
       poemList.className = "poem-list";
 
+      if (world.image) {
+        const imageLink = document.createElement("a");
+        imageLink.className = "world-image-link";
+        imageLink.href = world.link || "#";
+
+        if (world.link) {
+          imageLink.target = "_blank";
+          imageLink.rel = "noopener noreferrer";
+        }
+
+        const image = document.createElement("img");
+        image.className = "world-image";
+        image.src = world.image;
+        image.alt = `${world.name}のサムネイル画像`;
+        image.loading = "lazy";
+        imageLink.append(image);
+        poemList.append(imageLink);
+      }
+
       if (!world.poems || !world.poems.length) {
         poemList.append(createTextBlock("empty", "このワールドの詩は準備中です。"));
       } else {

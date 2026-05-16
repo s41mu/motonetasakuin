@@ -2,6 +2,8 @@ window.siteData = {
   worlds: [
     {
       name: "φ",
+      link: "https://cluster.mu/w/b3c77382-94e6-4560-a1d9-17b2c68e2340",
+      image: "https://cluster-file-storage.imgix.net/uploads/group_df7d5ec9f30f1bb04546e68f37/b23edb3e-a3d7-4d75-b7ef-65593403db72/ec8a9491-3615-42fc-8449-8b769b97df54.jpg",
       poems: [
         {
           font: "Imitate",
@@ -78,6 +80,8 @@ window.siteData = {
     },
     {
       name: "ψ",
+      link: "https://cluster.mu/w/023a4ac0-aa74-41f3-8dc5-6628d6924f62",
+      image: "https://cluster-file-storage.imgix.net/assets/venues/thumbnails/b23edb3e-a3d7-4d75-b7ef-65593403db72/vt_7455bd1b2dfc432c54939e8975.jpg",
       poems: [
         {
           font: "Imitate",
@@ -132,6 +136,8 @@ window.siteData = {
     },
     {
       name: "Ψ",
+      link: "https://cluster.mu/w/5b75da24-db07-472e-893d-fcc845a181f8",
+      image: "https://cluster-file-storage.imgix.net/assets/venues/thumbnails/b23edb3e-a3d7-4d75-b7ef-65593403db72/vt_a045bfeb232e74818f0b8aea66.jpg",
       poems: [
         {
           font: "Imitate",
