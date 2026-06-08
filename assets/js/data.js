@@ -185,6 +185,24 @@ window.siteData = {
   ],
   feeds: [
     {
+      link: "https://cluster.mu/journals/0f6ffa97-dc0e-44ea-82ce-97885386f770",
+      image: "https://cluster-file-storage.imgix.net/journal_media/b23edb3e-a3d7-4d75-b7ef-65593403db72/0f6ffa97-dc0e-44ea-82ce-97885386f770/eb7f106f-b384-4305-8c2c-1f9406b5e550.png",
+      body: `廻れよ廻れ、白く燃え上がれ、
+何も分からないまま冬は来る、
+阿諛追従は斃らず、
+全てを間違っている。`,
+      origin: [
+        {
+          name: "あやまり",
+          link: "https://lyrics.imicomweb.com/songs/3769/"
+        },
+        {
+          name: "巡",
+          link: "https://lyrics.imicomweb.com/songs/269/"
+        }
+      ]
+    },
+    {
       link: "https://cluster.mu/journals/44a94a3f-12ed-4aab-b101-d7d08cb5c35b",
       image: "https://cluster-file-storage.imgix.net/journal_media/b23edb3e-a3d7-4d75-b7ef-65593403db72/44a94a3f-12ed-4aab-b101-d7d08cb5c35b/03d2abf0-c52b-4f1c-994d-598f3e432476.png",
       body: `誰でもない観測者(あなた)が、
