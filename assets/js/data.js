@@ -185,6 +185,20 @@ window.siteData = {
   ],
   feeds: [
     {
+      link: "https://cluster.mu/journals/5bc96daa-7fb3-4d8e-9758-898efbdd6349",
+      image: "https://cluster-file-storage.imgix.net/journal_media/b23edb3e-a3d7-4d75-b7ef-65593403db72/5bc96daa-7fb3-4d8e-9758-898efbdd6349/3f3cc92a-6e5d-453b-b534-88c7c3bb359c.png",
+      body: `誰が為に糖が来て、
+夢は来なくて、
+また驟雨を散らかすの？
+はずれ。`,
+      origin: [
+        {
+          name: "貉",
+          link: "https://lyrics.imicomweb.com/songs/8155/"
+        }
+      ]
+    },
+    {
       link: "https://cluster.mu/journals/0f6ffa97-dc0e-44ea-82ce-97885386f770",
       image: "https://cluster-file-storage.imgix.net/journal_media/b23edb3e-a3d7-4d75-b7ef-65593403db72/0f6ffa97-dc0e-44ea-82ce-97885386f770/eb7f106f-b384-4305-8c2c-1f9406b5e550.png",
       body: `廻れよ廻れ、白く燃え上がれ、
