@@ -1,6 +1,53 @@
 window.siteData = {
   worlds: [
     {
+      name: "執着",
+      link: "https://cluster.mu/w/0efb6cd1-6b14-4b02-a402-b02b7abb926e",
+      image: "https://cluster-file-storage.imgix.net/uploads/group_df7d5ec9f30f1bb04546e68f37/b23edb3e-a3d7-4d75-b7ef-65593403db72/c3ac2f8a-fba5-4421-b3e6-e669961df96b.png",
+      poems: [
+        {
+          font: "Imitate",
+          body: `誰もここにいないのに、
+いると思わせているのは誰？
+誰かが遺した場所を、
+見つめているのですか？
+
+次は何時ですか、
+何処に行けば逢えますか？
+誰にも知りえぬ誰かの、
+影は杳として。
+
+唯　延髄に操られるがままに
+膨らませ　続ける。
+希少性の債務なのなら、
+全てわたしの所為でしょう？
+
+味が消え失せたら最後。
+虚空へと弾けた。
+何も与えられずに
+吐き棄て　朽ちた。`,
+          origin: [
+            {
+              name: "教育",
+              link: "https://lyrics.imicomweb.com/songs/7/",
+            },
+            {
+              name: "訣別",
+              link: "https://lyrics.imicomweb.com/songs/489/"
+            },
+            {
+              name: "傀儡",
+              link: "https://lyrics.imicomweb.com/songs/312/",
+            },
+            {
+              name: "analogy",
+              link: "https://lyrics.imicomweb.com/songs/334/"
+            }
+          ]
+        }
+      ]
+    },
+    {
       name: "φ",
       link: "https://cluster.mu/w/5b75da24-db07-472e-893d-fcc845a181f8",
       image: "https://cluster-file-storage.imgix.net/assets/venues/thumbnails/b23edb3e-a3d7-4d75-b7ef-65593403db72/vt_a045bfeb232e74818f0b8aea66.jpg",
